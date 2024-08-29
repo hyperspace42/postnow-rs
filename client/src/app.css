@@ -10,6 +10,10 @@ html {
   font-size: 14px;
 }
 
-.test:hover .card_field {
-  background-color: #3f3f44;
+.cards {
+  visibility: hidden;
+}
+
+.cards:hover > :not(:hover) {
+  opacity: .7;
 }

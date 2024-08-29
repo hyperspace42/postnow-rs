@@ -5,13 +5,15 @@
   import Card from '@components/Card/Card.svelte';
 </script>
 
+<!-- svelte-ignore css_unused_selector -->
 <div class="container">
   <Header />
-  <div class="grid grid-cols-4 gap-8">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+  <div class="cards grid grid-cols-6 grid-row-2 gap-16">
+    <Card col=2/>
+    <Card col=2/>
+    <Card col=2/>
+    <Card col=3/>
+    <Card col=3/>
   </div>
 </div>
 
@@ -21,4 +23,6 @@
     margin-left: auto;
     margin-right: auto;
   }
+
 </style>
+
