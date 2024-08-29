@@ -12,8 +12,10 @@ html {
 
 .cards {
   visibility: hidden;
+  transition: ease-in .2s;
 }
 
 .cards:hover > :not(:hover) {
   opacity: .7;
+  filter: blur(0.2rem);
 }

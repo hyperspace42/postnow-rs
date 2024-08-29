@@ -1,10 +1,10 @@
 <script>
-  const list = ['rose', 'violet', 'rose', 'rose', 'violet', 'violet'];
+  export let list;
 </script>
 
 <div class="w-full flex">
   {#each list.reverse() as item}
-    {#if item === 'rose'}
+    {#if item === 1}
       <div class="block_red h-4 w-full"></div>
     {:else}
       <div class="block_violet h-4 w-full"></div>
