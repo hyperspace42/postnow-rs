@@ -4,7 +4,12 @@
 
 
 html {
-  font-family: "Rubik", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 14px;
+}
+
+.test:hover .card_field {
+  background-color: #3f3f44;
 }

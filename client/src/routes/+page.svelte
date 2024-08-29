@@ -1,7 +1,24 @@
 <script>
   import '../app.css';
+
+  import Header from '@components/header/Header.svelte';
+  import Card from '@components/Card/Card.svelte';
 </script>
 
-<h1 class="text-indigo-600 text-2xl">Welcome to SvelteKit</h1>
-<p class="text-zinc-200">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<p class="text-2xl text-orange-600">Привет мир</p>
+<div class="container">
+  <Header />
+  <div class="grid grid-cols-4 gap-8">
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+  </div>
+</div>
+
+<style>
+  .container {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
