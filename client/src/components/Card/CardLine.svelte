@@ -2,12 +2,12 @@
   export let list;
 </script>
 
-<div class="w-full flex">
+<div class="w-full flex gap-2 items-center content-center justify-center">
   {#each list.reverse() as item}
     {#if item === 1}
-      <div class="block_red h-4 w-full"></div>
+      <div class="block_red h-5 w-5 rounded-full"></div>
     {:else}
-      <div class="block_violet h-4 w-full"></div>
+      <div class="block_violet h-5 w-5 rounded-full"></div>
     {/if}
   {/each}
 </div>

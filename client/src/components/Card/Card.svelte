@@ -18,16 +18,16 @@
       }
     }
 
-    return arr
+    return arr;
   };
 </script>
 
 <button class="col-span-{span} rounded-3xl">
-  <h1 class="text-5xl text-violet-400 font-medium px-3 py-6">{name}</h1>
-  <CardLine list={cardList()}/>
-  <p class="text-7xl text-violet-300 font-semibold px-3 pt-10">{cash}</p>
-  <p class="text-4xl text-zinc-300 font-medium px-3">Остаток</p>
-  <div class="flex flex-col gap-3 mt-6 p-3">
+  <p class="text-5xl text-violet-400 font-medium px-3 pt-6 mb-5">{name}</p>
+  <p class="text-7xl text-violet-300 font-semibold px-3 py-3 ">{cash}</p>
+  <p class="text-4xl text-zinc-300 font-medium px-3 mb-8">Остаток</p>
+  <CardLine list={cardList()} />
+  <div class="flex flex-col gap-3 mt-3 p-3">
     <CardField />
     <CardField />
   </div>
@@ -45,4 +45,5 @@
     background-color: #343436;
     box-shadow: 0 1.2rem 2rem -0.5rem #a78bfa27;
   }
+
 </style>
