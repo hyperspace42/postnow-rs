@@ -7,11 +7,11 @@
 			"@components/*": [
 				"../src/components/*"
 			],
-			"@utils": [
-				"../src/utils"
+			"@lib": [
+				"../src/lib"
 			],
-			"@utils/*": [
-				"../src/utils/*"
+			"@lib/*": [
+				"../src/lib/*"
 			],
 			"$lib": [
 				"../src/lib"
