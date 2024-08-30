@@ -41,6 +41,8 @@ declare module '$env/static/private' {
 	export const DriverData: string;
 	export const EDITOR: string;
 	export const EXEPATH: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
@@ -67,7 +69,6 @@ declare module '$env/static/private' {
 	export const npm_config_engine_strict: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_global_prefix: string;
-	export const npm_config_host: string;
 	export const npm_config_init_module: string;
 	export const npm_config_local_prefix: string;
 	export const npm_config_node_gyp: string;
@@ -177,6 +178,8 @@ declare module '$env/dynamic/private' {
 		DriverData: string;
 		EDITOR: string;
 		EXEPATH: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
 		HOME: string;
 		HOMEDRIVE: string;
@@ -203,7 +206,6 @@ declare module '$env/dynamic/private' {
 		npm_config_engine_strict: string;
 		npm_config_globalconfig: string;
 		npm_config_global_prefix: string;
-		npm_config_host: string;
 		npm_config_init_module: string;
 		npm_config_local_prefix: string;
 		npm_config_node_gyp: string;

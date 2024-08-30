@@ -4,11 +4,6 @@ export default {
     theme: {
     extend: {},
   },
-  safelist: [
-    {
-      pattern: /col-span-(1|2|3)/
-    }
-  ],
   plugins: [],
 }
 

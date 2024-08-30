@@ -17,5 +17,5 @@ html {
 
 .cards:hover > :not(:hover) {
   opacity: .7;
-  filter: blur(0.2rem);
+  filter: blur(0.3rem);
 }

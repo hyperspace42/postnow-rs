@@ -2,9 +2,8 @@
   import CardField from './CardField.svelte';
   import CardLine from './CardLine.svelte';
 
-  export let span = 0;
   export let name = 'Мир';
-  export let cash = 10000;
+  export let cashValue = 10000;
 
   const cardList = () => {
     let arr = [];
@@ -22,9 +21,11 @@
   };
 </script>
 
-<button class="col-span-{span} rounded-3xl">
-  <p class="text-5xl text-violet-400 font-medium px-3 pt-6 mb-5">{name}</p>
-  <p class="text-7xl text-violet-300 font-semibold px-3 py-3 ">{cash}</p>
+<button class="rounded-3xl visible">
+  <p class="text-5xl text-violet-400 font-medium px-3 pt-6 pb-5 mb-3 border-b border-zinc-700">
+    {name}
+  </p>
+  <p class="text-7xl text-violet-300 font-semibold px-3 py-3">{cashValue}</p>
   <p class="text-4xl text-zinc-300 font-medium px-3 mb-8">Остаток</p>
   <CardLine list={cardList()} />
   <div class="flex flex-col gap-3 mt-3 p-3">
@@ -35,7 +36,6 @@
 
 <style>
   button {
-    visibility: visible;
     background-color: #27272a;
     transition: cubic-bezier(0.29, 0.56, 0.24, 1.28) 0.3s;
   }
@@ -43,7 +43,6 @@
   button:hover {
     transform: translateY(-2rem);
     background-color: #343436;
-    box-shadow: 0 1.2rem 2rem -0.5rem #a78bfa27;
+    box-shadow: 0 1.2rem 2rem -0.5rem #fa8bb527;
   }
-
 </style>
