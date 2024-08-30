@@ -4,12 +4,11 @@
   import Header from '@components/header/Header.svelte';
   import Card from '@components/Card/Card.svelte';
   import InfoCard from '@components/card/InfoCard.svelte';
-  import formatCash from '@lib/formatCash.js'
 
   const cards = [
     {
       name: 'Мир',
-      cash: 4200
+      cash: 10200
     },
     {
       name: 'Ваи',
@@ -17,7 +16,7 @@
     },
     {
       name: 'Лен 117',
-      cash: 9650
+      cash: 14550
     },
     {
       name: 'Остужева',
@@ -25,7 +24,7 @@
     },
     {
       name: 'Лен 20',
-      cash: 5430
+      cash: 10000
     }
   ];
 
@@ -37,17 +36,17 @@
 
 <div class="container">
   <Header />
-  <div class="cards grid grid-cols-3 grid-rows-2 gap-12">
-    <InfoCard cashValue={formatCash(getCashSum())} />
+  <div class="cards grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-3 md:grid-cols-1 md:grid-rows-6 gap-12">
+    <InfoCard cashValue={getCashSum()} />
     {#each cards as card}
-      <Card name={card.name} cashValue={formatCash(card.cash)} />
+      <Card name={card.name} cashValue={card.cash} />
     {/each}
   </div>
 </div>
 
 <style>
   .container {
-    max-width: 70%;
+    max-width: 65%;
     margin-left: auto;
     margin-right: auto;
   }

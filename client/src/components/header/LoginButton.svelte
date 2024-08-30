@@ -14,7 +14,7 @@
       xmlns="http://www.w3.org/2000/svg"
       color="#000000"
       ><path
-        d="M12 12H19M19 12L16 15M19 12L16 9"
+        d="M19 12H12M12 12L15 15M12 12L15 9"
         stroke="#1e1b4b"
         stroke-width="0.15rem"
         stroke-linecap="round"
@@ -26,7 +26,8 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       ></path></svg
-    >log in</button
+    >
+    log in</button
   >
 </div>
 

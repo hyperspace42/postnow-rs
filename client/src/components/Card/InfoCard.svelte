@@ -1,4 +1,6 @@
 <script>
+  import currencyFormat from '@lib/currencyFormat.js';
+
   export let cashValue;
 </script>
 
@@ -10,11 +12,21 @@
   </p>
   <div class="w-full h-full flex flex-col content-center items-center justify-center">
     <p class="text-7xl text-violet-300 font-semibold px-3 py-3 border-b-2 border-zinc-500">
-      {cashValue}
+      {currencyFormat(cashValue)}
     </p>
-    <p class="text-7xl text-zinc-400 font-semibold px-3 py-3">
-      50 000
-    </p>
+    {#if 50000 > cashValue}
+      <p class="text-5xl text-rose-400 font-semibold px-3 py-3">
+        -{currencyFormat(50000 - cashValue)}
+      </p>
+    {:else if 50000 === cashValue}
+      <p class="text-5xl text-violet-400 font-semibold px-3 py-3">
+        {currencyFormat(cashValue - 50000)}
+      </p>
+    {:else}
+      <p class="text-5xl text-violet-400 font-semibold px-3 py-3">
+        +{currencyFormat(cashValue - 50000)}
+      </p>
+    {/if}
     <div class="flex flex-col gap-3 mt-3 p-3"></div>
   </div>
 </div>

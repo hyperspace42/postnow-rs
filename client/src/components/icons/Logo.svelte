@@ -1,7 +1,7 @@
 <div class="logo p-1.5 pl-2 rounded-xl">
   <svg
-    width="3.2rem"
-    height="3.2rem"
+    width="2.5rem"
+    height="2.5rem"
     viewBox="0 0 24 24"
     stroke-width="1.5"
     fill="none"
