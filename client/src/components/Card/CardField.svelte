@@ -2,7 +2,7 @@
 
 <div class="card_field mx-2 px-4 py-3 rounded-2xl flex items-center justify-between">
   <div class="flex items-center gap-2">
-    <div class="w-8 h-8 bg-violet-200 rounded-full"></div>
+    <div class="w-8 h-8 bg-violet-300 rounded-full"></div>
     <p class="text-xl text-zinc-200">Егор взял <span>3500</span></p>
   </div>
   <div class="">
